@@ -1,10 +1,14 @@
 import React from 'react'
-
+import NavLink from './NavLink'
+import './NavLinksContainer.css'
 function NavLinksContainer() {
   return (
-    <div>
-      
-    </div>
+   <ul className='nav-link-container'>
+    <NavLink name="Home" />
+    <NavLink name="Services" />
+    <NavLink name="Find a Doctor" />
+    <NavLink name="About us" />
+   </ul>
   )
 }
 
