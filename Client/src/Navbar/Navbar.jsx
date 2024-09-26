@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import BrandNameWithLogo from "./BrandNameWithLogo";
 import brandLogo from "../assets/Logo.svg";
-import Container from "../Container";
+import Container from "../components/Container";
 import NavLinksContainer from "./NavLinksContainer";
 import Button from "../components/Button";
 function Navbar() {

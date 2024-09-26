@@ -1,9 +1,12 @@
 import React from 'react'
-import FluidContainer from '../FluidContainer'
+import FluidContainer from '../components/FluidContainer'
+import Row from '../components/Row'
 function Home() {
   return (
-    <FluidContainer className="home-container" >
-      
+    <FluidContainer>
+      <Row>
+        
+      </Row>
     </FluidContainer>
   )
 }
