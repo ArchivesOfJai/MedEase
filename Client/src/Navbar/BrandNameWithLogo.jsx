@@ -1,12 +1,29 @@
 import React from 'react'
-import './BrandNameWithLogo.css'
 
+const defaultBrandDivSx = {
+  display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',
+    width: 'max-content',
+    gap: '0.5rem',
+}
 
-function BrandNameWithLogo({imgUrl,brandName,brandNameStyle}) {
+const defaultBrandImgSx = {
+  height: '1.5rem',
+    width: '1.5rem',
+}
+
+const defaultBrandNameSx = {
+  margin: '0',
+  fontSize: '1.5rem',
+  fontWeight: '600',
+}
+function BrandNameWithLogo({imgUrl,brandName,brandNameSx={}}) {
   return (
-    <div className='brand'>
-      <img src={imgUrl} alt={brandName} />
-      <p style={brandNameStyle}>{brandName}</p>
+    <div style={{...defaultBrandDivSx}}>
+      <img src={imgUrl} alt={brandName} style={{...defaultBrandImgSx}}/>
+      <p style={{...defaultBrandNameSx,...brandNameSx}}>{brandName}</p>
     </div>
   )
 }

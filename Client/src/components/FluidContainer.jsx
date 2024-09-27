@@ -1,8 +1,11 @@
 import React from 'react'
 
-function FluidContainer({children,className,...props}) {
+const defaultSx = {
+  maxWidth: '1200px',  
+}
+function FluidContainer({children,className,sx={},...props}) {
   return (
-    <div className={`fluid-container ${className}`} {...props}>
+    <div className={className} style={{...defaultSx,...sx}} {...props}>
       {children}
     </div>
   )

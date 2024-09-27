@@ -1,9 +1,21 @@
 import React from 'react'
 import NavLink from './NavLink'
-import './NavLinksContainer.css'
+
+
+
+const defaultNavLinksContainerSx = {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '1rem',
+    height: '100%',
+    width: 'max-content',
+    listStyle: 'none',
+    margin: '0 auto',   
+}
 function NavLinksContainer() {
   return (
-   <ul className='nav-link-container'>
+   <ul style={{...defaultNavLinksContainerSx}}>
     <NavLink name="Home" />
     <NavLink name="Services" />
     <NavLink name="Find a Doctor" />
