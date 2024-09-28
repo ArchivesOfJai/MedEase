@@ -1,13 +1,18 @@
 import React from 'react'
+import styled from 'styled-components';
 
-const defaultSx = {
-  maxWidth: '1200px',  
-}
+
+
+const FluidContainer_div = styled.div`
+  width: 100%;
+  margin: 0 auto; 
+`
+
 function FluidContainer({children,className,sx={},...props}) {
   return (
-    <div className={className} style={{...defaultSx,...sx}} {...props}>
+    <FluidContainer_div className={className} style={{...sx}} {...props}>
       {children}
-    </div>
+    </FluidContainer_div>
   )
 }
 

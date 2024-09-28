@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
-function Row({ children, className,...props }) {
+const FlexRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+function Row({ children, className, sx = {}, ...props }) {
   return (
-    <div className={`row ${className}`} {...props}>
+    <FlexRow className={`row ${className}`} style={{ ...sx }} {...props}>
       {children}
-    </div>
-  )
+    </FlexRow>
+  );
 }
 
-export default Row
+export default Row;
