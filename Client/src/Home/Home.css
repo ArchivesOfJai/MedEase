@@ -1,0 +1,70 @@
+#homeIntro .col1{
+    text-align: left;
+    align-content: center;
+}
+
+
+
+
+#homeIntro .ratedtext{
+   display: inline-flex;
+   align-items: center;
+   background-color: #f0f7ff;
+   border-radius: 20px;
+   color: #007bff;
+   font-family: 'Inter', sans-serif;
+   font-size: 12px;
+   font-weight: 500;
+   font-style: normal;
+   padding: 2px 16px;
+   margin-bottom: 30px;
+   word-spacing: 2px;
+}
+
+#homeIntro .connectingyou{
+   font-family: 'Inter', sans-serif;
+   color: '#1E1E1E';
+   font-size: 60px;
+   font-weight: 600;
+   font-style: normal;
+   line-height: 90px;
+}
+
+#homeIntro .connectingyou >i{
+   color: #007bff;
+}
+
+#homeIntro .description{
+   font-family: 'Inter', sans-serif;
+   color: #1e1e1eab;
+   font-size: 18px;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 30px;
+}
+
+#homeIntro .image{
+    width: 60%;
+    margin:90px 40px 60px 40px;
+    border-radius: 40px;
+}
+
+#homeIntro .bookconsultation-btn{
+   background-color: #2F80ED;
+   color: #fff;
+}
+
+#homeIntro .learnmore-btn{
+   background-color: #fff;
+   color: #2F80ED;
+   border: 1px solid #2F80ED!important;
+   margin-left: 10px;
+}
+
+#homeIntro .bookconsultation-btn,#homeIntro .learnmore-btn{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 30px;
+}

@@ -4,6 +4,7 @@ import brandLogo from "../assets/Logo.svg";
 import Container from "../components/Container";
 import NavLinksContainer from "./NavLinksContainer";
 import Button from "../components/Button";
+import "./Navbar.css";
 
 const defaultNavbarSx = {
   padding: '10px 0',
@@ -19,11 +20,11 @@ function Navbar() {
 
   return (
     <>
-      <nav style={defaultNavbarSx}>
+      <nav id="navbar" style={defaultNavbarSx}>
         <Container sx={defaultContainerSx}>
           <BrandNameWithLogo imgUrl={brandLogo} brandName="MedEase" brandNameSx={{color: "#2F80ED"}} />
           <NavLinksContainer/>
-          <Button name={token?"Logout":"Login"} />
+          <Button className='login-btn' name={token?"Logout":"Login"} />
         </Container>
       </nav>
     </>

@@ -1,22 +1,19 @@
 import React from 'react';
 
 
-const defaultSx = { backgroundColor: '#2F80ED',
-  color: '#FFFFFF',
-  width: '150px',
-  height: '40px',
+const defaultSx = { 
+  width: 'max-content',
   borderRadius: '99px',
-  padding: '5px 30px',
-  fontSize: '1.5rem',
+  padding: '10px 30px',
   border: 'none',
   textAlign: 'center',
   verticalAlign: 'middle',
-
+  cursor: 'pointer',
 }
 
-function Button({className,name,sx={},...props}) {
+function Button({children,className,name,sx={},...props}) {
   return (
-    <button className={className} style={{...defaultSx,...sx}} {...props}>{name}</button>
+    <button className={className} style={{...defaultSx,...sx}} {...props}>{name}{children}</button>
   )
 }
 

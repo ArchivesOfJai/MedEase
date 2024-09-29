@@ -6,46 +6,33 @@ import Container from "../components/Container";
 import Text from "../components/Text";
 import StarIcon from "@mui/icons-material/Star";
 import image1 from "../assets/image1.png";
-const rated_1 = {
-  display: "inline-flex",
-  alignItems: "center",
-  backgroundColor: "#f0f7ff",
-  color: "#007bff",
-  padding: "2px 16px",
-  borderRadius: "20px",
-  fontFamily: '"Inter", sans-serif',
-  fontSize: "12px",
-};
-
-const connectingYou = {
-  color: "#1E1E1E",
-  fontFamily: '"Inter", sans-serif',
-  fontSize: "32px",
-};
-
-
-const image1Sx = {
-  width: "60%",
-  margin:'90px 40px 60px 40px',
-  borderRadius: "40px",
-};
+import "./Home.css";
+import Button from "../components/Button";
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function Home() {
   return (
     <FluidContainer id="homeIntro">
       <Container>
         <Row>
-          <Col sx={{ position: "relative", textAlign: "left" }}>
-            <Text type="span" sx={{ ...rated_1 }}>
-              <StarIcon sx={{ paddingRight: "5px", fontSize: "16px" }} />
+          <Col className='col1'>
+            <Text className="ratedtext" type="span" >
+              <StarIcon sx={{fontSize: "14px", marginRight: "5px"}}/>
               Rated #1 choice for healthcare appointments by users
             </Text>
-            <Text type="p" sx={connectingYou}>
-              Connecting You <i>to</i> better Health
+            <Text type="p" className='connectingyou'>
+              Connecting You <i>to</i> Better Health
             </Text>
+            <Text type="p" className='description'>
+            We're here to link you directly to improved health outcomes, effortlessly connecting you with the care you need.
+            </Text>
+            <Button className='bookconsultation-btn' name="Book Consultation"/>
+            <Button className='learnmore-btn' name="Learn More">
+              <ArrowRightAltIcon sx={{fontSize: "20px", marginLeft: "5px",verticalAlign: "middle"}}/>
+            </Button>
           </Col>
           <Col>
-            <img src={image1} alt="image" style={image1Sx} />
+            <img src={image1} alt="image" className="image" />
           </Col>
         </Row>
       </Container>
