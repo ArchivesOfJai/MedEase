@@ -10,6 +10,8 @@ import "./Home.css";
 import Button from "../components/Button";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
+
+
 function Home() {
   return (
     <FluidContainer id="homeIntro">
