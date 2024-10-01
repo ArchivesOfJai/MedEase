@@ -11,12 +11,12 @@ function HighlightBox({className,sx={},number,numberSx,textSx,text,...props}) {
     <Box className={className} style={{...sx}} {...props}>
       <Row>
         <Col sx={{padding:"0",}}>
-          <Text type="span" className='number' sx={numberSx}>
+          <Text type="p" className='number' sx={numberSx}>
             {number}
           </Text>
         </Col>
         <Col sx={{padding:"0"}}>
-          <Text type="span" className='text'  sx={textSx}>
+          <Text type="p" className='text'  sx={textSx}>
             {text}
           </Text>
         </Col>

@@ -14,17 +14,14 @@ import HighlightBox from "../components/HighlightBox";
 function Home() {
   const numberSx = {
     color: "#007bff",
-    fontSize: "32px",
+    fontSize: "36px",
     fontWeight: "700",
-    verticalAlign: "middle",
   };
 
   const textSx = {
     color: "#1E1E1E",
     fontSize: "12px",
     fontWeight: "500",
-    paddingRight: "25px",
-    verticalAlign: "middle",
   };
   return (
     // first section homeIntro
@@ -68,8 +65,8 @@ function Home() {
               className="highlight-box-1"
               number={"2.650+"}
               text={"patients have trusted us"}
-              numberSx={numberSx}
-              textSx={textSx}
+              numberSx={{...numberSx}}
+              textSx={{...textSx,paddingRight:"25px"}}
             />
 
 
@@ -77,8 +74,8 @@ function Home() {
               className="highlight-box-2"
               number={"10K+"}
               text={"Hours of Patients Meetings"}
-              numberSx={numberSx}
-              textSx={textSx}
+              numberSx={{...numberSx,width:"fit-content"}}
+              textSx={{...textSx}}
             />
           </Col>
         </Row>
