@@ -11,7 +11,7 @@ const DefaultCol = styled.div`
 `;
 function Col({ children, className, sx = {}, ...props }) {
   return (
-    <DefaultCol className={`${className}`} style={{ ...sx }} {...props}>
+    <DefaultCol className={`col ${className}`} style={{ ...sx }} {...props}>
       {children}
     </DefaultCol>
   );
